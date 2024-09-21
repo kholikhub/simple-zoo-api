@@ -1,0 +1,22 @@
+tags:
+  - Get/ Animal<id>
+parameters:
+  - in: path
+    name: id
+    required: true
+    type: integer
+    example: "1"
+responses:
+  200:
+    description: Animal found
+    content:
+      application/json:
+        example:
+          id: "1"
+          species: animal species
+          age: age animal
+          special requiremsent: special requiremsent animal
+          gender: gender animal
+          
+  404:
+    description: animal not found

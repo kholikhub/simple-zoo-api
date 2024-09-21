@@ -1,0 +1,31 @@
+{
+        "tags": ["Get Animals/animals<gender>"],
+        "responses": {
+            200: {
+                "description": "List of animals",
+                "content": {
+                    "application/json": {
+                        "example": [
+                            {
+                                "id": "1",
+                                "species": "Animal name",
+                                "age": "Animal age ",
+                                "special requirements": "Special requirements of animal",
+                                "gender": "Male",
+                            }
+                        ]
+                    }
+                },
+            },
+            400: {"description": "Invalid gender"},
+        },
+        "parameters": [
+            {
+                "in": "path",
+                "name": "gender",
+                "required": True,
+                "type": "string",
+                "enum": ["male", "female"],
+            }
+        ],
+}

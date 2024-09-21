@@ -1,0 +1,21 @@
+  {
+        "tags": ["Get ALL/ Animals"],
+        "responses": {
+            200: {
+                "description": "List of animals",
+                "schema": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {"type": "integer"},
+                            "species": {"type": "string"},
+                            "age": {"type": "integer"},
+                            "special requirements": {"type": "string"},
+                            "gender": {"type": "string"},
+                        },
+                    },
+                },
+            }
+        },
+    }

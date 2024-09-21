@@ -1,0 +1,30 @@
+  tags:
+    - ADD Animal
+  responses:
+    201:
+      description: Animal added successfully
+      content:
+        application/json:
+          example:
+            id: "1"
+            species: Animal Species
+            special requiremsent: Animal special requiremsent
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        properties:
+          species: 
+            type: string
+            example: Animal species
+          special requiremsent:
+            type: string
+            example: animal special requirements
+          age:
+            type: integer
+            example: "1"
+          gender:
+            type: string
+            example: Male
